@@ -1,0 +1,42 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+  <div class="base">
+    <div class="navigation">
+      <!-- <application name="@hemant/react-header"></application> -->
+      <application name="@hemant/navigator-menu"></application>
+    </div>
+    <main>
+      <route path="header">
+        <application name="@hemant/header"></application>
+      </route>
+      <route path="vue">
+        <application name="@hemant/vue-spa"></application>
+      </route>
+      <route path="hero">
+        <application name="@hemant/hero"></application>
+      </route>
+      <route path="dashboard">
+        <application name="@hemant/dashboard"></application>
+      </route>
+    </main>
+  </div>
+  <div class="footer">
+    <application name="@hemant/footer"></application>
+  </div>
+</single-spa-router>
